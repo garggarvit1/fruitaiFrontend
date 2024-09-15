@@ -1,0 +1,188 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0ffff;
+}
+
+.translate-container {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(to bottom, #fffaff, #e0ffff);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.translateinput,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+   
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+   
+    font-size: 18px;
+    
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #6c757d;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.error {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    word-wrap: break-word;
+} */
+
+
+/* Main container for the translator */
+.translate-page {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0ffff;
+    /* Light blue background */
+}
+
+/* Main container for the translation box */
+.translate-container {
+    max-width: 25%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(to bottom, #fffaff, #e0ffff);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+.translate-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input group styling */
+.translate-input-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.translate-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field styling */
+.translate-input,
+.translate-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button styling */
+.translate-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.translate-button:hover {
+    background-color: #0056b3;
+}
+
+.translate-button:disabled {
+    background-color: #6c757d;
+}
+
+/* Styling for the translation result */
+.translate-result {
+    margin-top: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+/* Error message styling */
+.translate-error {
+    color: red;
+}
+
+/* Paragraph text styling */
+.translate-text {
+    font-size: 20px;
+    word-wrap: break-word;
+}

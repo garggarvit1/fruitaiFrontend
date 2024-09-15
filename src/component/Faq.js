@@ -43,7 +43,7 @@ const Faq = () => {
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/faqs/get");
+        const response = await axios.get("https://fruitaibackend-mpu0.onrender.com/api/faqs/get");
         setFaqs(response.data);
       } catch (error) {
         console.error("Error fetching FAQs", error);
@@ -60,7 +60,7 @@ const Faq = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:5000/api/faqs/add", newFaq);
+      const response = await axios.post("https://fruitaibackend-mpu0.onrender.com/api/faqs/add", newFaq);
       setFaqs([...faqs, response.data]);
       setNewFaq({ title: "", content: "", imageUrl: "" });
     } catch (error) {
@@ -71,7 +71,7 @@ const Faq = () => {
   // Delete an FAQ
   const handleDeleteFaq = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/faqs/delete/${id}`);
+      await axios.delete(`https://fruitaibackend-mpu0.onrender.com/api/faqs/delete/${id}`);
       setFaqs(faqs.filter((faq) => faq._id !== id));
     } catch (error) {
       console.error("Error deleting FAQ", error);
@@ -85,7 +85,7 @@ const Faq = () => {
       return;
     }
     try {
-      const response = await axios.put(`http://localhost:5000/api/faqs/${id}`, editingFaq);
+      const response = await axios.put(`https://fruitaibackend-mpu0.onrender.com/api/faqs/${id}`, editingFaq);
       setFaqs(faqs.map((faq) => (faq._id === id ? response.data : faq)));
       setEditingFaq(null); // Reset editing state
     } catch (error) {
